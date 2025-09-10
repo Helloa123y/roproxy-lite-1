@@ -61,7 +61,7 @@ func makeRequest(ctx *fasthttp.RequestCtx, attempt int) *fasthttp.Response {
 		resp.SetBody([]byte("Proxy failed to connect. Please try again."))
 		resp.SetStatusCode(500)
 
-		return resp
+		return resp 
 	}
 
 	req := fasthttp.AcquireRequest()
